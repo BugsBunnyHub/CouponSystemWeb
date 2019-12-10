@@ -1,0 +1,18 @@
+<div>
+  <label>
+    <input [(ngModel)]="email" placeholder="email" required="true" type="email"/>
+  </label><br/>
+  <label>
+    <input [(ngModel)]="password" placeholder="password" required="true" type="password"/>
+  </label><br/>
+  <label>
+    <select [(ngModel)]="type">
+      <option>Admin</option>
+      <option>Company</option>
+      <option>Customer</option>
+    </select>
+  </label><br/>
+  <input (click)="login()" type="submit" value="Login"/>
+</div>
+
+

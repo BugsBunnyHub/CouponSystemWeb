@@ -1,0 +1,17 @@
+<label>
+  <input (keyup)=getCustomerId() [(ngModel)]="customer.id" placeholder="id" type="number">
+</label>
+<label>
+  <input [(ngModel)]="customer.firstName" placeholder="first name" type="string">
+</label>
+<label>
+  <input [(ngModel)]="customer.lastName" placeholder="last name" type="string">
+</label>
+<label>
+  <input [(ngModel)]="customer.email" placeholder="email" type="email">
+</label>
+<label>
+  <input [(ngModel)]="customer.password" placeholder="password" type="password">
+</label>
+
+<input (click)="updateCustomer()" type="button" value="Update">

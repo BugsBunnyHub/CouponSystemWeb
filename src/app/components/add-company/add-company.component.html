@@ -1,0 +1,13 @@
+<div>
+  <label>
+    <input [(ngModel)]="company.name" placeholder="name" type="text">
+  </label>
+  <label>
+    <input [(ngModel)]="company.email" placeholder="email" type="email">
+  </label>
+  <label>
+    <input [(ngModel)]="company.password" placeholder="password" type="password">
+  </label>
+  <input (click)="addCompany()" type="button" value="Add">
+</div>
+

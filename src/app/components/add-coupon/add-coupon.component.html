@@ -1,0 +1,31 @@
+<div>
+  <label>
+    <input [(ngModel)]="coupon.title" placeholder="title" type="text">
+  </label>
+  <!--  <br>-->
+  <!--  <input type="checkbox" name="Food" value="Food"> Food<br>-->
+  <!--  <input type="checkbox" name="Vacation" value="Vacation"> Vacation<br>-->
+  <!--  <input type="checkbox" name="Restaurant" value="Restaurant"> Restaurant<br>-->
+  <!--  <input type="checkbox" name="Electricity" value="Electricity">Electricity<br>-->
+  <label>
+    <input [(ngModel)]="coupon.category" placeholder="category" type="text">
+  </label>
+  <label>
+    <input [(ngModel)]="coupon.description" placeholder="description" type="text">
+  </label>
+  <label>
+    <input [(ngModel)]="coupon.startDate" type="date">
+  </label>
+  <label>
+    <input [(ngModel)]="coupon.endDate" type="date">
+  </label>
+  <label>
+    <input [(ngModel)]="coupon.image" placeholder="image URL" type="text">
+  </label>
+  <label>
+    <input [(ngModel)]="coupon.price" placeholder="price" type="number">
+  </label>
+  <label>
+    <input (click)="addCoupon()" type="button" value="Add">
+  </label>
+</div>

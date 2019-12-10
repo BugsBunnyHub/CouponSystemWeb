@@ -1,0 +1,13 @@
+<label>
+  <input (keyup)=getCompanyId() [(ngModel)]="company.id" placeholder="id" type="number">
+</label>
+<label>
+  <input [(ngModel)]="company.name" disabled="true" placeholder="name" type="text">
+</label>
+<label>
+  <input [(ngModel)]="company.email" placeholder="email" type="email">
+</label>
+<label>
+  <input [(ngModel)]="company.password" placeholder="password" type="password">
+</label>
+<input (click)="updateCompany()" type="submit" value="Update">

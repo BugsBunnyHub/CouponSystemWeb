@@ -1,0 +1,25 @@
+section {
+  height: 100%;
+  background-color: #ff9e0c;
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+  grid-template-columns: 20% 80%;
+}
+
+section > * {
+  border: solid black 1px;
+}
+
+header {
+  grid-column: span 2;
+  text-align: center;
+}
+
+footer {
+  grid-column: span 2;
+}
+
+main {
+  overflow: auto;
+  text-align: center;
+}

@@ -1,0 +1,29 @@
+<h5>Find company by ID</h5> <br>
+<label>
+  <input [(ngModel)]="company.id" placeholder="id" type="number">
+  <input (click)="getOneCompanyById()" type="button" value="Find">
+</label> <br>
+<h5>Find company by name</h5> <br>
+<label>
+  <input [(ngModel)]="company.name" placeholder="name" type="text">
+  <input (click)="getOneCompanyByName()" type="button" value="Find">
+</label><br>
+<h5>Find company by email</h5> <br>
+<label>
+  <input [(ngModel)]="company.email" placeholder="email" type="email">
+  <input (click)="getOneCompanyByEmail()" type="button" value="Find">
+</label><br>
+
+<table style="width:100%">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Email</th>
+  </tr>
+  <tr>
+    <td>{{company.id}}</td>
+    <td>{{company.name}}</td>
+    <td>{{company.email}}</td>
+  </tr>
+</table>
+

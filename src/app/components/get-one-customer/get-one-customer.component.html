@@ -1,0 +1,25 @@
+<h5>Find customer by ID</h5> <br>
+<label>
+  <input [(ngModel)]="customer.id" placeholder="id" type="number">
+  <input (click)="getOneCustomerById()" type="button" value="Find">
+</label>
+<h5>Find customer by email</h5> <br>
+<label>
+  <input [(ngModel)]="customer.email" placeholder="email" type="email">
+</label>
+<input (click)="getOneCustomerByEmail()" type="button" value="Find">
+
+<table style="width:100%">
+  <tr>
+    <th>ID</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+  </tr>
+  <tr>
+    <td>{{customer.id}}</td>
+    <td>{{customer.firstName}}</td>
+    <td>{{customer.lastName}}</td>
+    <td>{{customer.email}}</td>
+  </tr>
+</table>

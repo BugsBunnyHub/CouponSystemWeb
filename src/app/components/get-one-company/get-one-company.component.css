@@ -1,0 +1,10 @@
+table, th, td {
+  border: 2px solid black;
+  margin: 0 auto;
+  text-align: center;
+  table-layout: fixed;
+  width: 180px;
+  padding: 10px;
+}
+
+

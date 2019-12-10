@@ -1,0 +1,16 @@
+<table style="width:100%">
+  <tr>
+    <th>ID</th>
+    <th>Title</th>
+    <th>CompanyID</th>
+    <th></th>
+  </tr>
+  <tr *ngFor="let c of coupons">
+    <td>{{c.id}}</td>
+    <td>{{c.title}}</td>
+    <td>{{c.companyID.id}}</td>
+    <td>
+      <button (click)="purchaseCoupon(c)">Purchase</button>
+    </td>
+  </tr>
+</table>
