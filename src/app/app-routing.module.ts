@@ -20,6 +20,7 @@ import {UpdateCouponComponent} from './components/update-coupon/update-coupon.co
 import {DeleteCouponComponent} from './components/delete-coupon/delete-coupon.component';
 import {CustomerComponent} from './customer/customer.component';
 import {PurchaseCouponComponent} from './components/purchase-coupon/purchase-coupon.component';
+import {GetAllCouponsComponent} from './components/get-all-coupons/get-all-coupons.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -42,6 +43,7 @@ const routes: Routes = [
   {path: 'delete-coupon', component: DeleteCouponComponent},
   {path: 'get-company-details', component: GetCompanyDetailsComponent},
   {path: 'purchase-coupon', component: PurchaseCouponComponent},
+  {path: 'get-all-coupons', component: GetAllCouponsComponent},
   {path: '', redirectTo: 'login', pathMatch: 'full'}
 
 ];

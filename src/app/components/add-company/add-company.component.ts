@@ -16,7 +16,6 @@ export class AddCompanyComponent implements OnInit {
 
   ngOnInit() {
   }
-
   public addCompany() {
     this.client.addCompany(this.company).subscribe(result => {
       alert('company info:  ' + 'company ID: ' + result.id + ' name: ' + result.name + ' email: ' + result.email);

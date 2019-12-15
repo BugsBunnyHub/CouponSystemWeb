@@ -25,6 +25,9 @@ import {GetCompanyDetailsComponent} from './components/get-company-details/get-c
 import {UpdateCouponComponent} from './components/update-coupon/update-coupon.component';
 import {DeleteCouponComponent} from './components/delete-coupon/delete-coupon.component';
 import {PurchaseCouponComponent} from './components/purchase-coupon/purchase-coupon.component';
+import {GetAllCouponsComponent} from './components/get-all-coupons/get-all-coupons.component';
+import {GetCustomerCouponsComponent} from './components/get-customer-coupons/get-customer-coupons.component';
+import {GetComanyCouponsComponent} from './components/get-comany-coupons/get-comany-coupons.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +52,10 @@ import {PurchaseCouponComponent} from './components/purchase-coupon/purchase-cou
     GetCompanyDetailsComponent,
     UpdateCouponComponent,
     DeleteCouponComponent,
-    PurchaseCouponComponent
+    PurchaseCouponComponent,
+    GetAllCouponsComponent,
+    GetCustomerCouponsComponent,
+    GetComanyCouponsComponent
   ],
   imports: [
     BrowserModule,

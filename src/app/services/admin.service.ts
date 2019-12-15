@@ -3,6 +3,7 @@ import {HttpClient} from '@angular/common/http';
 import {Companies} from '../models/companies';
 import {Observable} from 'rxjs';
 import {Customers} from '../models/customers';
+import {Coupons} from '../models/coupons';
 
 @Injectable({
   providedIn: 'root'
@@ -83,4 +84,8 @@ export class AdminService {
   }
 
 
+  public getAllCoupons(): Observable<Coupons[]> {
+    return this.client.get<Coupons[]>('http://localhost:8080/admin/findAllCoupons/' + sessionStorage.token);
+
+  }
 }
