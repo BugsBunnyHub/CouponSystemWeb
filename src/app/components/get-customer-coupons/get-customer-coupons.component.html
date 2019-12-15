@@ -1,1 +1,18 @@
-<p>get-customer-coupons works!</p>
+<table style="width:100%">
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Category</th>
+    <th>Price</th>
+    <th>Start Date</th>
+    <th>End Date</th>
+  </tr>
+  <tr *ngFor="let c of coupons">
+    <td>{{c.title}}</td>
+    <td>{{c.description}}</td>
+    <td>{{c.category}}</td>
+    <td>{{c.price}}</td>
+    <td>{{c.startDate}}</td>
+    <td>{{c.endDate}}</td>
+  </tr>
+</table>

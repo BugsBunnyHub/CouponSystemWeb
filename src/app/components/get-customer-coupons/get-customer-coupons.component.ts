@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {CompanyService} from '../../services/company.service';
-import {Customers} from '../../models/customers';
+import {CustomerService} from '../../services/customer.service';
+import {Coupons} from '../../models/coupons';
+
 
 @Component({
   selector: 'app-get-customer-coupons',
@@ -9,14 +10,14 @@ import {Customers} from '../../models/customers';
 })
 export class GetCustomerCouponsComponent implements OnInit {
 
-  public customer: Customers = new Customers();
+  coupons: Coupons[] = [];
 
-  constructor(private client: CompanyService) {
+  constructor(private client: CustomerService) {
   }
 
   ngOnInit() {
-    this.client.getCompanyDetails().subscribe((result) => {
-      this.customer = result;
+    this.client.getCustomerCoupons().subscribe((result) => {
+      this.coupons = result;
     });
   }
 

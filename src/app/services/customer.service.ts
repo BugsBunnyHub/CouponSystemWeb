@@ -15,9 +15,13 @@ export class CustomerService {
     return this.client.post<Coupons>('http://localhost:8080/customer/purchaseCoupon/' + sessionStorage.token, coupon);
   }
 
+  public getCustomerCoupons(): Observable<Coupons[]> {
+    return this.client.get<Coupons[]>('http://localhost:8080/customer/getCustomerCoupons/' + sessionStorage.token);
+
+  }
+
   public getAllCoupons(): Observable<Coupons[]> {
     return this.client.get<Coupons[]>('http://localhost:8080/customer/getAllCoupons/' + sessionStorage.token);
 
   }
-
 }
